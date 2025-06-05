@@ -3,6 +3,8 @@
 A full-stack music streaming platform with user authentication, music playback, and playlist management.
 
 
+https://github.com/user-attachments/assets/376d0dc7-7dde-46b1-ae7f-58eddee434d6
+
 
 ## Features
 
@@ -32,39 +34,36 @@ A full-stack music streaming platform with user authentication, music playback, 
 
 ## Installation
 
-### Prerequisites
 - Node.js (v16 or higher)
 - MongoDB (local or Atlas)
 - npm or yarn
 
 ### Backend Setup
-1. Navigate to the backend directory:
-   ```bash
-   cd backend
-Install dependencies:
 
-bash
-npm install
-Create a .env file:
+1. Navigate to the backend directory: cd backend
 
-env
-MONGODB_URI=mongodb://localhost:27017/music-platform
-JWT_SECRET=your_very_strong_secret_here
+2. Install dependencies: npm install
+
+3. Create a .env file:
+
+MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/music-platform?retryWrites=true&w=majority
+
+JWT_SECRET=your_jwt_secret_key
+
+JAMENDO_CLIENT_ID=your_jamendo_client_id
+
 PORT=5000
-Start the server:
 
-bash
-node server.js
-Frontend Setup
-Navigate to the frontend directory:
+4. Start the server: node server.js
 
-bash
-cd frontend
-Install dependencies:
+# Frontend Setup
 
-bash
-npm install
-Start the development server:
+1. Navigate to the frontend directory: cd frontend
 
-bash
-npm start
+2. Install dependencies: npm install
+
+3. Start the development server: npm start
+
+# Project Structure
+
+![image](https://github.com/user-attachments/assets/806041d8-5b85-4aaa-ba8a-9625aa43dbb2)
